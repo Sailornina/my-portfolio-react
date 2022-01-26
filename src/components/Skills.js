@@ -12,13 +12,15 @@ function Skills() {
         <ul class="skills-container">
           <li class="skills-title">
             <FaHtml5 />
+            <p>HTML5</p>
           </li>
           <li class="skills-title">
             <FaCss3Alt />
-            <li className="skills-title">
+            <p>CSS3</p>
+            </li>
+          <li className="skills-title">
               <FaSass />
             </li>
-          </li>
           <li class="skills-title">
             <FaJsSquare />
           </li>
