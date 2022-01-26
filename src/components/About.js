@@ -1,17 +1,17 @@
 import React from "react";
 import '../styles/styles.scss';
-import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import profile from './profile.jpg';
 
 function About() {
         return (
         <section id="about"> 
         <div>
-            <h1>About me:</h1>
-            <hr />
+            <h1>About me</h1>
           <div className="about">
               <strong>Hi, I'm Antonella!</strong><br /><br />
+              <img alt="profile" src={profile} className="profile" width="470"/>
+              <br /><br />
               <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /><br />
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -35,7 +35,8 @@ function About() {
           <FaLinkedin />
           <FaTwitter />
           </div>
-        </div>  
+        </div>
+        <hr />
         </section>      
         );
     }

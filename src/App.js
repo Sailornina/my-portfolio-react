@@ -5,10 +5,10 @@ import Skills from './components/Skills';
 function App() {
   return (
     <>
-    <div className="about-app">
+    <main className="portfolio-app">
        <About></About>
        <Skills></Skills>
-    </div> 
+    </main> 
     </>      
 
   );
