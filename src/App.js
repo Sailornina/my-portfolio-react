@@ -6,12 +6,12 @@ import Projects from './components/Projects';
 function App() {
   return (
     <>
-    <main className="portfolio-app">
-       <About></About>
-       <Skills></Skills>
-       <Projects></Projects>
-    </main> 
-    </>      
+      <main className="portfolio-app">
+        <About></About>
+        <Skills></Skills>
+        <Projects></Projects>
+      </main>
+    </>
 
   );
 }

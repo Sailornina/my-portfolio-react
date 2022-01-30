@@ -17,11 +17,11 @@ function Skills() {
           <li class="skills-title">
             <FaCss3Alt />
             <p>CSS</p>
-            </li>
+          </li>
           <li className="skills-title">
-              <FaSass />
-              <p>SASS</p>
-            </li>
+            <FaSass />
+            <p>SASS</p>
+          </li>
           <li class="skills-title">
             <FaJsSquare />
             <p>JavaScript</p>
@@ -35,8 +35,8 @@ function Skills() {
             <p>Next.js</p>
           </li>
           <li class="skills-title">
-             <DiResponsive />
-             <p>Responsive Design</p>
+            <DiResponsive />
+            <p>Responsive Design</p>
           </li>
           <li class="skills-title">
             <FaNode />
