@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "React and Next",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "https://media.giphy.com/media/RgaOTwxMlVXEv2lGBZ/giphy.gif",
+    image: "./project.1.gif",
     link: "https://cmyk-lime.vercel.app/",
   },
   {
@@ -22,4 +22,5 @@ export const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     //image: ,//
     link: "https://sailornina.github.io/technical-documentation-page/",
-  },
+  }
+]
