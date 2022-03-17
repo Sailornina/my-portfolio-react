@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/styles.scss';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import profile from './profile.jpg';
+
 
 function About() {
         return (
@@ -10,7 +10,7 @@ function About() {
             <h1>About me</h1>
           <div className="about">
               <strong>Hi, I'm Antonella!</strong><br /><br />
-              <img alt="profile" src={profile} className="profile" width="470"/>
+              <img alt="profile" src={`${process.env.PUBLIC_URL}/image/profile.jpg`} className="profile" width="470"/>
               <br /><br />
               <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /><br />
