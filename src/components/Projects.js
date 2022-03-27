@@ -20,7 +20,7 @@ function Projects() {
                                     alt="lime"
                                     src={project.image}
                                 />
-                                <div>
+                                <div className="project-info">
                                     <h2 className="subtitle-project">{project.subtitle}</h2>
                                     <h1 className="title-project">{project.title}</h1>
                                     <p className="description-project">{project.description}</p>
