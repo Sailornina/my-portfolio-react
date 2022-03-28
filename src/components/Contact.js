@@ -14,10 +14,10 @@ function Contact() {
           />
         </div>
       </div>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <form name="simple-contact-form" data-netlify="true" data-netlify-honeypot="bot-field" className="contact-form">
         <h2 className="title-form">Hire me!</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div className="info-form">
+        <div className="info-contact-form">
           <label htmlFor="name">
             Name
           </label>
@@ -25,9 +25,10 @@ function Contact() {
             type="text"
             id="name"
             name="name"
+            className="form-control"
           />
         </div>
-        <div className="info-form">
+        <div className="info-contact-form">
           <label htmlFor="email">
             Email
           </label>
@@ -35,9 +36,10 @@ function Contact() {
             type="email"
             id="email"
             name="email"
+            className="form-control"
           />
         </div>
-        <div className="info-form">
+        <div className="info-contact-form">
           <label
             htmlFor="message">
             Message
@@ -45,12 +47,12 @@ function Contact() {
           <textarea
             id="message"
             name="message"
+            className="form-control"
           />
         </div>
         <button
-          type="submit"
-          className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Submit
+          type="submit" className="button">
+          Send Message
         </button>
       </form>
     </section>
