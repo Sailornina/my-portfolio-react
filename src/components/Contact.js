@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from 'react';
 import '../styles/styles.scss';
 
 function Contact() {
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      message: ""
+    });
+
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      console.log(formData)
+  
+  };
+
+
   return (
     <section id="contact">
       <div className="contact-me">
@@ -14,14 +27,16 @@ function Contact() {
           />
         </div>
       </div>
-      <form name="simple-contact-form" data-netlify="true" data-netlify-honeypot="bot-field" className="contact-form">
+      <form onSubmit={handleSubmit} name="simple-contact-form" data-netlify="true" data-netlify-honeypot="bot-field" className="contact-form">
         <h2 className="title-form">Hire me!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Here is my contact information, in case you want to have some coffee and discuss any of my projects.</p>
         <div className="info-contact-form">
           <label htmlFor="name">
             Name
           </label>
           <input
+           onChange={(e) => setFormData({...formData, name: e.target.value})}
+            value={formData.name}
             type="text"
             id="name"
             name="name"
@@ -33,6 +48,8 @@ function Contact() {
             Email
           </label>
           <input
+          onChange={(e) => setFormData({...formData, email: e.target.value})}
+            value={formData.email}
             type="email"
             id="email"
             name="email"
@@ -45,6 +62,8 @@ function Contact() {
             Message
           </label>
           <textarea
+          onChange={(e) => setFormData({...formData, message: e.target.value})}
+            value={formData.message}
             id="message"
             name="message"
             className="form-control"
