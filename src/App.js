@@ -9,11 +9,11 @@ function App() {
   return (
     <>
       <main className="portfolio-app">
+        <Navbar></Navbar>
         <About></About>
         <Skills></Skills>
         <Projects></Projects>
         <Contact></Contact>
-        <Navbar></Navbar>
       </main>
     </>
 
