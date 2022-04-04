@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/styles.scss';
+import '../styles/main.scss';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 
@@ -9,7 +9,7 @@ function About() {
         <div>
             <h1>About me</h1>
           <div className="about">
-              <strong>Hi, I'm Antonella!</strong><br /><br />
+              <strong className="name-about">Hi, I'm Antonella!</strong><br /><br />
               <img alt="profile" src={`${process.env.PUBLIC_URL}/image/profile.jpg`} className="profile" width="470"/>
               <br /><br />
               <p>

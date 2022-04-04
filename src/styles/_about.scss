@@ -1,7 +1,18 @@
 $primary-color: #6867AC;
 $text-color: rgb(14, 13, 13);
+$font-weights: (
+"normal": 400,
+"medium": 500,
+"bold": 700,
+"black": 900
+);
 
 #about {
     background: $primary-color;
     color: $text-color;
+    font-weight: map-get($font-weights, normal)
 };
+
+.name-about {
+    font-weight: map-get($font-weights, black);
+}
