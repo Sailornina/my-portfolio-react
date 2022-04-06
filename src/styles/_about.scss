@@ -10,21 +10,33 @@ $font-weights: (
 #about {
     background: $primary-color;
     color: $text-color;
+    
 };
 
-.name-about {
-    font-weight: map-get($font-weights, black);
-    font-size: 50px;
-};
+.about-container {
 
-#{&}paragraph-about {
-    font-weight: map-get($font-weights, normal);
+    & .paragraph-about {
+        font-weight: map-get($font-weights, normal);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        &:hover {
+            color: antiquewhite;
+        }
+    
+    };
 
-    &:hover {
-        color: aliceblue;
-    }
+    & .name-about {
+        font-weight: map-get($font-weights, black);
+        font-size: 50px;
 
-};
+        &:hover {
+            color: antiquewhite;
+        }
+    };
+}
+
 
 .social-icons {
     justify-content: center;

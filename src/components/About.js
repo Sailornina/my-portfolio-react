@@ -8,7 +8,7 @@ function About() {
         <section id="about"> 
         <div>
             <h1>About me</h1>
-          <div className="about">
+          <div className="about-container">
               <strong className="name-about">Hi, I'm Antonella!</strong><br /><br />
               <img alt="profile" src={`${process.env.PUBLIC_URL}/image/profile.jpg`} className="profile" width="470"/>
               <br /><br />
