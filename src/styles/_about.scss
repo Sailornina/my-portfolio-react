@@ -10,9 +10,25 @@ $font-weights: (
 #about {
     background: $primary-color;
     color: $text-color;
-    font-weight: map-get($font-weights, normal)
 };
 
 .name-about {
     font-weight: map-get($font-weights, black);
+    font-size: 50px;
+};
+
+#{&}paragraph-about {
+    font-weight: map-get($font-weights, normal);
+
+    &:hover {
+        color: aliceblue;
+    }
+
+};
+
+.social-icons {
+    justify-content: center;
+    flex-basis: 20%;
+    font-size: 3rem;
+    text-align: center;
 }
