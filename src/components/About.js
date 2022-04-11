@@ -13,9 +13,8 @@ function About() {
               <img alt="profile" src={`${process.env.PUBLIC_URL}/image/profile.jpg`} className="profile" width="470"/>
               <br /><br />
               <p className="paragraph-about">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /><br />
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />
+              I'm a self-taught Software Developer. I considerer myself as a curious person and passionate about technology, that’s why I also decided to start studying Web Programming through Full Stack Open and The Odin Project but also this year I will start studying a bootcamp called Technigo. I'm continuously improving my skills and I'm eager to keep learning and contribute in a collaborative team/environment. <br /><br />
+              I am Argentina living in Sweden three years ago. So I'm still studying Swedish and enjoying fika. As for me, I like to watch anime, play Phasmophofia with friends as well as enjoy a day of hiking. I created this website to showcase some of the work I've done so far! Please take a look at my page and have fun! I hope to hear from you soon.<br /><br />
               </p>
            </div>
            <div className="links.work">

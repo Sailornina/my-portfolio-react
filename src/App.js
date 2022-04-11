@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <main className="portfolio-app">
+      <main className="portfolio">
         <Navbar></Navbar>
         <About></About>
         <Skills></Skills>

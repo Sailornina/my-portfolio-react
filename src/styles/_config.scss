@@ -1,3 +1,4 @@
+// Colours
 $primary-color: #6867AC;
 $secondary-color: #A267AC;
 $thirdly-color: #CE7BB0;
@@ -11,3 +12,9 @@ $font-weights: (
 );
 
 $text-color: rgb(14, 13, 13);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+

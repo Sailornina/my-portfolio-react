@@ -1,32 +1,27 @@
 @import 'config';
 
-$primary-color: #6867AC;
-$font-weights: (
-"normal": 400,
-"medium": 500,
-"bold": 700,
-"black": 900
-);
-
 #about {
     background: $primary-color;
     color: $text-color;
     
-};
+}
 
 .about-container {
 
     & .paragraph-about {
         font-weight: map-get($font-weights, normal);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        /*flex-direction: column;
+        justify-content: center;*/
+        flex-basis: 50%;
+        margin-top: 50px;
+        font-size: 20px;
     
         &:hover {
             color: antiquewhite;
         }
     
-    };
+    }
 
     & .name-about {
         font-weight: map-get($font-weights, black);
@@ -40,8 +35,12 @@ $font-weights: (
 
 
 .social-icons {
+    display: flex;
     justify-content: center;
     flex-basis: 20%;
     font-size: 3rem;
-    text-align: center;
+
+    &:hover {
+        color: antiquewhite;
+    }
 }
