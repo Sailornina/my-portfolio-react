@@ -1,9 +1,19 @@
-// Colours
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//fonts//
+$font-family: 'Montserrat', sans-serif;
+$font-family: 'Sen', sans-serif;
+
+//colours//
 $primary-color: #6867AC;
 $secondary-color: #A267AC;
 $thirdly-color: #CE7BB0;
 $fourthly-color:#FFBCD1;
 
+//weights//
 $font-weights: (
 "normal": 400,
 "medium": 500,
@@ -11,10 +21,14 @@ $font-weights: (
 "black": 900
 );
 
+//text-colours//
 $text-color: rgb(14, 13, 13);
+$text-light-color: antiquewhite;
 
-* {
-    margin: 0;
-    padding: 0;
-}
+//font-sizes//
+@mixin font-size($size){
+    font-size: ($size/10) * 1rem;
+};
+
+
 

@@ -2,45 +2,42 @@
 
 #about {
     background: $primary-color;
-    color: $text-color;
-    
+    color: $text-color;    
 }
 
 .about-container {
 
     & .paragraph-about {
+        @include font-size(10);
         font-weight: map-get($font-weights, normal);
         display: flex;
-        /*flex-direction: column;
-        justify-content: center;*/
         flex-basis: 50%;
         margin-top: 50px;
-        font-size: 20px;
-    
+            
         &:hover {
-            color: antiquewhite;
+            color: $text-light-color;
         }
     
     }
 
     & .name-about {
+        @include font-size(30);
         font-weight: map-get($font-weights, black);
-        font-size: 50px;
+        
 
         &:hover {
-            color: antiquewhite;
+            color: $text-light-color;
         }
     };
 }
 
-
 .social-icons {
+    @include font-size(20);
     display: flex;
     justify-content: center;
     flex-basis: 20%;
-    font-size: 3rem;
 
     &:hover {
-        color: antiquewhite;
+        color: $text-light-color;
     }
 }
