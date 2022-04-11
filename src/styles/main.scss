@@ -1,6 +1,7 @@
 @import 'about';
 @import 'config';
 @import 'skills';
+@import 'projects';
 
 main {
   font-family: $font-family;
@@ -19,7 +20,12 @@ main {
   }
 
   & h1 {
-    @include font-size(20)
+    @include font-size(20);
+    margin-top: 1rem;
+  }
+
+  & li {
+    list-style: none;
   }
 
 };
