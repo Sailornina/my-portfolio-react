@@ -1,5 +1,6 @@
 @import 'about';
 @import 'config';
+@import 'skills';
 
 main {
   font-family: $font-family;
@@ -17,4 +18,8 @@ main {
     display: block;
   }
 
-}
+  & h1 {
+    @include font-size(20)
+  }
+
+};

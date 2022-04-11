@@ -1,0 +1,25 @@
+@import 'config';
+
+#skills {
+    background: $secondary-color;
+    color: $text-color;  
+};
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+};
+
+.skills-title {
+    @include font-size(20);
+    padding: 0 5rem;
+
+    &:hover {
+        color: $text-light-color;
+    }
+};
