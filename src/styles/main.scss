@@ -12,16 +12,19 @@ main {
     text-align: center;
   }
 
-  &.profile {
-    padding: 45px;
-    width: 50%;
-    height: auto;
-    display: block;
-  }
-
   & h1 {
     @include font-size(20);
     margin-top: 1rem;
+  }
+
+  & h4{
+    @include font-size(12);
+    margin-top: 0.5em;
+  }
+
+  & h3 {
+    @include font-size(15);
+    margin-top: 0.5rem;
   }
 
   & li {
@@ -30,5 +33,10 @@ main {
   
   & p {
     margin-top: 2rem;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $text-color;
   }
 };

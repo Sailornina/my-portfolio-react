@@ -2,15 +2,37 @@
 
 #projects {
     background: $thirdly-color;
-    color: $text-color;    
+    color: $text-color;
 };
+
+.p-project {
+    @include font-size(12);
+    font-weight: weight(medium);
+}
 
 .projects-container {
     margin-top: 4rem;
     margin-bottom: 5rem;
+    justify-content: center;
+    flex-direction: column;
 
-    &.project-info {
-        
+    & :hover {
+        color: $text-light-color;
     }
-};
 
+    & .subtitle-project {
+        font-weight: weight(bold);
+    }
+
+    & .title-project {
+        font-weight: weight(black);
+        margin-top: 0rem;
+    }
+
+    & .description-project {
+        font-weight: weight(normal);
+        margin-bottom: 1.5rem;
+        @include font-size(12);
+    }
+   
+};

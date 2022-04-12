@@ -8,16 +8,16 @@ function Projects() {
             <div>
                 <div>
                     <h1>My Projects</h1>
-                    <p>These are projects that I've to build during this time to improve my skills as frontend developer</p>
+                    <p className="p-project">These are projects that I've to build during this time to improve my skills as frontend developer</p>
                 </div>
                 <div className="projects-container">
                     {projects.map((project) => (
                         <a
                             href={project.link}
                             key={project.image}>
-                            <div>
+                            <div  className="projects-image">
                                 <img
-                                    alt="lime"
+                                    alt="foto"
                                     src={project.image}
                                 />
                                 <div className="project-info">
