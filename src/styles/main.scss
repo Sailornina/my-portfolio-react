@@ -2,6 +2,7 @@
 @import 'config';
 @import 'skills';
 @import 'projects';
+@import 'contact';
 
 main {
   font-family: $font-family;
@@ -39,4 +40,6 @@ main {
     text-decoration: none;
     color: $text-color;
   }
+
+  
 };

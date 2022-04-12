@@ -7,7 +7,7 @@ function Projects() {
         <section id="projects">
             <div>
                 <div>
-                    <h1>My Projects</h1>
+                    <h1 className="my-projects">My Projects</h1>
                     <p className="p-project">These are projects that I've to build during this time to improve my skills as frontend developer</p>
                 </div>
                 <div className="projects-container">
