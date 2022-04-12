@@ -1,5 +1,9 @@
 @import 'config';
 
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+};
+
 #about {
     background: $primary-color;
     color: $text-color;    
@@ -9,7 +13,7 @@
 
     & .paragraph-about {
         @include font-size(10);
-        font-weight: map-get($font-weights, normal);
+        font-weight: weight(normal);
         display: flex;
         flex-basis: 50%;
         margin-top: 50px;
@@ -22,7 +26,7 @@
 
     & .name-about {
         @include font-size(30);
-        font-weight: map-get($font-weights, black);
+        font-weight: weight(black);
         
 
         &:hover {

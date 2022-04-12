@@ -1,5 +1,9 @@
 @import 'config';
 
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+};
+
 #skills {
     background: $secondary-color;
     color: $text-color;  
@@ -11,15 +15,16 @@
     grid-gap: 4rem;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 6rem;
-    margin-top: 6rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 };
 
 .skills-title {
     @include font-size(20);
-    padding: 0 5rem;
+    padding: 0 2rem;
 
     &:hover {
         color: $text-light-color;
+        font-weight: weight(bold);
     }
 };
