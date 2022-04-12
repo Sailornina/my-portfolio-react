@@ -10,7 +10,7 @@ function Projects() {
                     <h1>My Projects</h1>
                     <p>These are projects that I've to build during this time to improve my skills as frontend developer</p>
                 </div>
-                <div className="container-project">
+                <div className="projects-container">
                     {projects.map((project) => (
                         <a
                             href={project.link}
@@ -21,8 +21,8 @@ function Projects() {
                                     src={project.image}
                                 />
                                 <div className="project-info">
-                                    <h2 className="subtitle-project">{project.subtitle}</h2>
-                                    <h1 className="title-project">{project.title}</h1>
+                                    <h4 className="subtitle-project">{project.subtitle}</h4>
+                                    <h3 className="title-project">{project.title}</h3>
                                     <p className="description-project">{project.description}</p>
                                 </div>
                             </div>

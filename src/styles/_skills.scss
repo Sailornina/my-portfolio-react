@@ -1,9 +1,5 @@
 @import 'config';
 
-@function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
-};
-
 #skills {
     background: $secondary-color;
     color: $text-color;  

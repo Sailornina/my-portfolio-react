@@ -21,6 +21,10 @@ $font-weights: (
 "black": 900
 );
 
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+};
+
 //text-colours//
 $text-color: rgb(14, 13, 13);
 $text-light-color: antiquewhite;

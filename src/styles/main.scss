@@ -27,5 +27,8 @@ main {
   & li {
     list-style: none;
   }
-
+  
+  & p {
+    margin-top: 2rem;
+  }
 };

@@ -1,8 +1,5 @@
 @import 'config';
 
-@function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
-};
 
 #about {
     background: $primary-color;
@@ -11,12 +8,12 @@
 
 .about-container {
 
-    & .paragraph-about {
+    & .p-about {
         @include font-size(10);
         font-weight: weight(normal);
         display: flex;
         flex-basis: 50%;
-        margin-top: 50px;
+        margin-top: 4rem;
 
         &:hover {
             color: $text-light-color;
@@ -40,6 +37,8 @@
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
  }
 
 .contact-detail {
