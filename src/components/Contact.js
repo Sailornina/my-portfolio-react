@@ -2,21 +2,22 @@ import React, { useState } from 'react';
 import '../styles/main.scss';
 
 function Contact() {
-    const [formData, setFormData] = useState({
-      name: "",
-      email: "",
-      message: ""
-    });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
-    const handleSubmit = (e) => {
-      e.preventDefault()
-      console.log(formData)
-  
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(formData)
+
   };
 
 
   return (
     <section id="contact">
+      <div className="contact-container">
       <div className="contact-me">
         <h1>Contact me</h1>
         <div className="map-data">
@@ -27,7 +28,7 @@ function Contact() {
           />
         </div>
       </div>
-      <form onSubmit={handleSubmit} name="simple-contact-form" data-netlify="true" data-netlify-honeypot="bot-field" className="contact-form">
+      <form onSubmit={handleSubmit} name="simple-contact-form" data-netlify="true" data-netlify-honeypot="bot-field" className="form-container">
         <h2 className="title-form">Hire me!</h2>
         <p>Here is my contact information, in case you want to have some coffee and discuss any of my projects.</p>
         <div className="info-contact-form">
@@ -35,7 +36,7 @@ function Contact() {
             Name
           </label>
           <input
-           onChange={(e) => setFormData({...formData, name: e.target.value})}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             value={formData.name}
             type="text"
             id="name"
@@ -48,7 +49,7 @@ function Contact() {
             Email
           </label>
           <input
-          onChange={(e) => setFormData({...formData, email: e.target.value})}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             value={formData.email}
             type="email"
             id="email"
@@ -62,7 +63,7 @@ function Contact() {
             Message
           </label>
           <textarea
-          onChange={(e) => setFormData({...formData, message: e.target.value})}
+            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             value={formData.message}
             id="message"
             name="message"
@@ -71,9 +72,13 @@ function Contact() {
         </div>
         <button
           type="submit" className="button">
-          Send Message
+          Get in Touch
         </button>
       </form>
+      <div>
+      <button class="back-to-top">Back to Top</button>
+      </div>
+      </div>
     </section>
   );
 }
