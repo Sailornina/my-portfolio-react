@@ -1,5 +1,12 @@
 @import 'config';
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
 #contact {
     background: $fourthly-color;
     color: $text-color;
@@ -24,7 +31,7 @@
 
 iframe {
   width:700px;
-  height:400px;
+  height:600px;
   border-radius:25px;
   border:5px groove $text-light-color;
 };
@@ -40,5 +47,29 @@ p {
 };
 
 .info-contact-form {
-  
+  input, textarea{
+    display: block;
+    width: 100%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0 ;
+    border:0;
+    border-radius: 5px;
+    font-size: 20px;
 }
+
+textarea{
+    height: 20vh;
+}
+};
+
+button {
+  background-color:  rgb(237, 130, 213);
+  width: 30%;
+  min-height: 5%;
+  background-clip: padding-box;
+  border: 1px solid #ecd3ad;
+  border-radius: 10px;
+	margin-top: 1rem;
+  padding: 1em;
+  color: #252524;
+};

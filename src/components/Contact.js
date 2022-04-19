@@ -15,7 +15,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="relative">
+    <section id="contact">
       <div className="contact-container">
         <div className="contact-me">
           <div className="map-data">
