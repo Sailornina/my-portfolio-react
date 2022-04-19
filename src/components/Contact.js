@@ -15,20 +15,22 @@ function Contact() {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className="relative">
       <div className="contact-container">
         <div className="contact-me">
-          <h1>Contact me</h1>
           <div className="map-data">
             <iframe
               title="stockholm"
-              frameborder="0"
+              frameBorder={0}
+              marginHeight={0}
+              marginWidth={0}
+              style={{ filter: "opacity(0.7)" }}
               src="https://www.google.com/maps/embed/v1/place?q=stockholm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             />
           </div>
         </div>
         <form onSubmit={handleSubmit} name="simple-contact-form" data-netlify="true" data-netlify-honeypot="bot-field" className="form-container">
-          <h2 className="title-form">Hire me!</h2>
+          <h1 className="title-form">Hire me!</h1>
           <p>Here is my contact information, in case you want to have some coffee and discuss any of my projects.</p>
           <div className="info-contact-form">
             <label htmlFor="name">

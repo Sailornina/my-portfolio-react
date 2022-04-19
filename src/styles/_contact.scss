@@ -3,33 +3,38 @@
 #contact {
     background: $fourthly-color;
     color: $text-color;
+    position: relative;
 };
 
 .contact-container {
-  display: flex;
-  -webkit-flex-flow: column wrap;
-  width: 800px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
 
-  /*& .map-data {
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-   };*/
+  & .contact-me {
+
+  }
+
+  & .map-data, .form-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  };
+
 };
-
-
-.contact-me
-.form-container {
-  display: flex;
-  flex-flow: column wrap;
-  background:yellow;
-  flex:1;
-}
-
 
 iframe {
-  width:500px;
-  height:400px; 
-  border:5px groove $text-light-color;
+  width:700px;
+  height:400px;
   border-radius:25px;
+  border:5px groove $text-light-color;
 };
+
+p {
+  @include font-size(12);
+  font-weight: weight(normal);
+  margin-bottom: 2rem;
+}
