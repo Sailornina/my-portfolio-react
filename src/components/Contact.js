@@ -24,7 +24,7 @@ function Contact() {
               frameBorder={0}
               marginHeight={0}
               marginWidth={0}
-              style={{ filter: "opacity(0.7)" }}
+              style={{ filter: "opacity(0.9)" }}
               src="https://www.google.com/maps/embed/v1/place?q=stockholm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             />
           </div>

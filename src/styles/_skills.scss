@@ -16,12 +16,14 @@
 };
 
 .skills-title {
-    @include font-size(20);
+    @include font-size(30);
+    font-weight: weight(bold);
     padding: 0 2rem;
     
 
     &:hover {
         color: $text-light-color;
-        font-weight: weight(bold);
+        font-weight: weight(black);
     }
 };
+

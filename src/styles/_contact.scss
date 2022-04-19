@@ -15,10 +15,6 @@
   margin-bottom: 4rem;
   margin-top: 5rem;
 
-  & .contact-me {
-
-  }
-
   & .map-data, .form-container {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -37,4 +33,12 @@ p {
   @include font-size(12);
   font-weight: weight(normal);
   margin-bottom: 2rem;
+
+  &:hover {
+    color: $text-light-color;
+  }  
+};
+
+.info-contact-form {
+  
 }
