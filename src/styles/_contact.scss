@@ -1,8 +1,8 @@
 @import 'config';
 
-*{
+/*{
   border: 1px solid red;
-}
+}*/
 
 #contact {
     background: $fourthly-color;
@@ -50,14 +50,16 @@ p {
     padding: .5rem .8rem .5rem .8rem;
     margin: .9vw 0;
     border:0;
+    border: 1px solid #ecd3ad;
     border-radius: 5px;
     @include font-size(12);
   }
-
- textarea {
-    height: 20vh;
-  }
 };
+
+textarea {
+  height: 20vh;
+  resize: none;
+}
 
 label {
   display: block;
@@ -67,15 +69,16 @@ label {
 };
 
 button {
-  background-color: rgb(237, 130, 213);
+  background-color: $color-box;
   width: 50%;
-  min-height: 5%;
-  background-clip: padding-box;
+  min-height: 3%;
+  /*background-clip: padding-box;*/
   border: 1px solid #ecd3ad;
-  border-radius: 10px;
+  border-radius: 5px;
 	margin-top: 1rem;
   padding: 1em;
   color: #252524;
   cursor: pointer;
+  @include font-size(9);
 };
 

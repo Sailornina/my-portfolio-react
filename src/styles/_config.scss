@@ -30,10 +30,14 @@ $font-weights: (
 $text-color: rgb(14, 13, 13);
 $text-light-color: antiquewhite;
 
+//color-button-box//
+$color-box: rgb(237, 130, 213);
+
 //font-sizes//
 @mixin font-size($size){
     font-size: ($size/10) * 1rem;
 };
+
 
 
 
