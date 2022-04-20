@@ -38,6 +38,10 @@ $color-box: rgb(237, 130, 213);
     font-size: ($size/10) * 1rem;
 };
 
+//borders-radius//
+@mixin radius($pixel, $radius: 0){
+    border-radius: $pixel;
+};
 
 
 

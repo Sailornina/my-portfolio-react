@@ -37,6 +37,7 @@
    
 };
 
-.projects-image {
-    
+img {
+    @include radius(5px);
+    border: 1px solid #ecd3ad;
 }
