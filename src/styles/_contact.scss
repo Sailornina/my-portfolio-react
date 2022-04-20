@@ -7,7 +7,6 @@
 #contact {
     background: $fourthly-color;
     color: $text-color;
-    position: relative;
 };
 
 .contact-container {
@@ -69,7 +68,8 @@ label {
 };
 
 button {
-  background-color: $color-box;
+  font-family: $font-family;
+  background-color: $button-color;
   width: 50%;
   min-height: 3%;
   /*background-clip: padding-box;*/
