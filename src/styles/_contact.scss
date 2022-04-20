@@ -1,9 +1,6 @@
 @import 'config';
 
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   border: 1px solid red;
 }
 
@@ -49,22 +46,29 @@ p {
 .info-contact-form {
   input, textarea{
     display: block;
-    width: 100%;
+    width: 99%;
     padding: .5rem .8rem .5rem .8rem;
-    margin: .9vw 0 ;
+    margin: .9vw 0;
     border:0;
     border-radius: 5px;
-    font-size: 20px;
-}
+    @include font-size(12);
+  }
 
-textarea{
+ textarea {
     height: 20vh;
-}
+  }
+};
+
+label {
+  display: block;
+  text-align: center;
+  @include font-size(12);
+  margin: 0 0 2vh 0;
 };
 
 button {
-  background-color:  rgb(237, 130, 213);
-  width: 30%;
+  background-color: rgb(237, 130, 213);
+  width: 50%;
   min-height: 5%;
   background-clip: padding-box;
   border: 1px solid #ecd3ad;
@@ -72,4 +76,6 @@ button {
 	margin-top: 1rem;
   padding: 1em;
   color: #252524;
+  cursor: pointer;
 };
+
