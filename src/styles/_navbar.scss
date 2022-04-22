@@ -5,3 +5,14 @@
     color: $text-color;
 };
 
+.my-name-navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    height: 10vh;
+
+    & a {
+        text-transform: uppercase;
+        margin: 20px;
+    }
+};
