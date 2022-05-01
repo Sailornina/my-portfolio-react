@@ -43,6 +43,7 @@ $text-light-color: antiquewhite;
     border-radius: $pixel;
 };
 
+//media-queries//
 @mixin media-md {
     @media screen and (min-width: 768px) {
       @content;
