@@ -3,7 +3,7 @@ export const projects = [
     title: "Lime Book",
     subtitle: "React.js and Next.js",
     description:
-      "Children's book where the user can interact with the green dot. This was a cooperative project with a community called FrontendCafe. I did in the development and design of the page.",
+      "Children's book where the user can interact with the green dot. This was a cooperative project with a community called FrontendCafe. Participated in development and design.",
     image: `${process.env.PUBLIC_URL}/image/project_1.gif`,
     link: "https://cmyk-lime.vercel.app/",
   },
