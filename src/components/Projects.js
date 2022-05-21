@@ -15,7 +15,7 @@ function Projects() {
                         <a
                             href={project.link}
                             key={project.image}>
-                            <div  className="projects-image">
+                            <article  className="projects-image">
                                 <img
                                     alt="foto"
                                     src={project.image}
@@ -25,7 +25,7 @@ function Projects() {
                                     <h3 className="title-project">{project.title}</h3>
                                     <p className="description-project">{project.description}</p>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                     ))}
 

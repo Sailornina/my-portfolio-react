@@ -19,15 +19,20 @@ main {
     @include font-size(20);
     margin-top: 1rem;
   }
-
-  & h4{
-    @include font-size(12);
-    margin-top: 0.5em;
+  
+  & h2 {
+    @include font-size(20);
+    margin-top: 1rem;
   }
 
   & h3 {
     @include font-size(15);
     margin-top: 0.5rem;
+  }
+
+  & h4 {
+    @include font-size(12);
+    margin-top: 0.5em;
   }
 
   & li {
